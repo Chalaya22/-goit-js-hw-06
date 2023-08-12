@@ -1,13 +1,3 @@
-// const list = document.querySelector("#categories");
-// console.dir(list);
-
-// const getCategories = document.querySelectorAll("li.item");
-// console.dir(getCategories);
-// getCategories.forEach((item) => {
-
-// })
-
-// console.dir([...list.children]);
 const createObjectOfCategories = () => {
   const categories = document.querySelector("#categories");
   const objLiItem = categories.children;
