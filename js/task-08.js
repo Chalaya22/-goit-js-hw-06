@@ -23,9 +23,10 @@
 
 document.querySelector("body").style.backgroundColor = "#000000";
 const form = document.querySelector(".login-form");
-form.addEventListener("submit", onSubmitHander);
+form.addEventListener("submit", onSubmitHandler);
 const totalFildsValue = {};
-function onSubmitHander(event) {
+
+function onSubmitHandler(event) {
   event.preventDefault();
 
   const email = event.currentTarget.elements.email;
@@ -34,13 +35,9 @@ function onSubmitHander(event) {
   if (email.value === "" || password.value === "") {
     alert("Complate fild");
   } else {
-    totalFildsValue.email = email.valua;
+    totalFildsValue.email = email.value;
     totalFildsValue.password = password.value;
     console.log(totalFildsValue);
   }
   event.currentTarget.reset();
 }
-//Метод reset() используется для очистки или для сброса к дефолтным значениям всех полей формы, например, после отправки данных на сервер.
-//   //   //{email: 'chalayaolga22@gmail.com', password: '123456789'}
-//   //   email: "chalayaolga22@gmail.com";
-//   //   password: "123456789";
